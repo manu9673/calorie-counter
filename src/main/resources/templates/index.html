@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Calorie Counter</title>
+</head>
+<body>
+    <div class="background-overlay">
+        <header>
+            <h1>Calorie Counter</h1>
+            <p>Track your daily calorie intake with ease!</p>
+        </header>
+
+        <section class="card">
+            <h2>Log Your Food</h2>
+            <form id="logFoodForm">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="foodName">Food Name:</label>
+                <input type="text" id="foodName" name="foodName" required>
+
+                <label for="quantity">Quantity (grams):</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <button type="submit">Add Food</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>View Your Food Log</h2>
+            <label for="logDate">Date:</label>
+            <input type="date" id="logDate" name="logDate">
+            <button id="viewLogButton">View Log</button>
+
+            <div id="logResults"></div>
+        </section>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
